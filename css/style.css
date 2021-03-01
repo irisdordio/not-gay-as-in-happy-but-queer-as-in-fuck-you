@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'GT-Sectra-Display-Regular-Italic';
+    src: url(fonts/GT-Sectra-Display-Regular-Italic-Trial.woff) format('woff'),
+         url(fonts/GT-Sectra-Display-Regular-Italic-Trial.woff2) format('woff2');
+         font-weight: 800;
+         font-style: italic;
+  }  
+
+@font-face {
+    font-family: 'Nostra';
+    src: url(fonts/Nostrav1.0-StreamTrial.woff) format('woff'),
+         url(fonts/Nostrav1.0-StreamTrial.woff2) format('woff2');
+         font-weight: normal;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(fonts/NotoSansSymbols2-Regular.woff) format('woff'),
+         url(fonts/NotoSansSymbols2-Regular.woff2) format('woff2');
+
+  }  
+
+@font-face {
+    font-family: 'EditorialNew-Regular';
+    src: url(fonts/EditorialNew-Regular.woff) format('woff'),
+         url(fonts/EditorialNew-Regular.woff2) format('woff2');
+         font-weight: normal;
+         font-style: normal;
+  }
+  
+
+@font-face {
+    font-family: 'Inter-ExtraLight';
+    src: url(fonts/Inter-ExtraLight.woff2) format('woff2'),
+         url(fonts/Inter-ExtraLight.woff) format('woff');
+         font-weight: 100;
+         font-style: normal;
+  }
+ 
+@font-face {
+    font-family: 'Inter-Light';
+    src: url(fonts/Inter-Light.woff2) format('woff2'),
+         url(fonts/Inter-Light.woff) format('woff');
+         font-weight: 200;
+         font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Inter-Italic';
+    src: url(fonts/Inter-Italic.woff) format('woff'),
+         url(fonts/Inter-Italic.woff2) format('woff2');
+         font-weight: normal;
+         font-style: italic;
+  }  
+
+@font-face {
+    font-family: 'Inter-MediumItalic';
+    src: url(fonts/Inter-MediumItalic.woff) format('woff'),
+         url(fonts/Inter-MediumItalic.woff2) format('woff2');
+  }
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url(fonts/Inter-Medium.woff) format('woff'),
+         url(fonts/Inter-Medium.woff2) format('woff2');
+  }
+
+@font-face {
+    font-family: 'Inter-Black';
+    src: url(fonts/Inter-Black.woff) format('woff'),
+         url(fonts/Inter-Black.woff2) format('woff2');
+         font-weight: 800;
+         font-style: normal;
+  }  
+
+  @font-face {
+    font-family: 'Inter-ExtraBlack';
+    src: url(fonts/Inter-ExtraBold.woff) format('woff'),
+         url(fonts/Inter-ExtraBold.woff2) format('woff2');
+         font-weight: 900;
+         font-style: normal;
+  }  
+
+@font-face {
+    font-family: 'Pilowlava';
+    src: url(fonts/Pilowlava-Regular.woff) format('woff'),
+         url(fonts/Pilowlava-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Mazius';
+    src: url(fonts/MAZIUSREVIEW20.09-Italic.woff) format('woff'),
+         url(fonts/MAZIUSREVIEW20.09-Italic.woff2) format('woff2');
+         font-weight: normal;
+         font-style: italic;
+}
+  
+:root {
+    font-size: 1.5vw;
+    line-height: 1.4em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    min-height: calc(100vh - 5rem);
+}
+
+/**********
+  GENERAL
+**********/
+body {
+    cursor: crosshair;
+    background-color: rgb(255, 238, 255);
+}
+
+.word {
+    font-family: 'Nostra';
+}
+
+.text {
+    font-family: 'Mazius';
+    font-size: 1.15rem;
+}
+
+.glyphy {
+    font-family: 'Noto Sans';
+}
+
+.glyph-link {
+    font-family: 'EditorialNew-Regular';
+    font-size: 1.3rem;
+}
+
+a {
+    color: #000;
+}
+
+h2 {
+    font-family: 'Inter-ExtraBlack';
+}
+
+.italic-text {
+    font-family: 'Inter-MediumItalic';
+}
+
+.italic-names {
+    font-family: 'Inter-MediumItalic';
+}
+
+.entry-date {
+    font-size: 0.45rem;
+    border: 0.065rem solid #000;
+    border-radius: 5em 5em 5em 5em;
+    background-color: #fff;
+    padding: 0.4rem 0.4rem;
+    height: 0.9rem;
+    line-height: 0.09em;
+    display: inline-block;
+    font-family: 'Inter-Medium';
+    text-align: center;
+}
+
+.p2 {
+    margin: 0.3rem 0;
+}
+
+.text-margin {
+    margin: 0 0.5rem;
+}
+
+.entry03-img {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+}
+
+.entry04-img {
+    position: absolute;
+    z-index: -1;
+    margin: -5rem;
+}
+
+.draw {
+ margin: 2rem;
+}
+
+.omg {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
+
+.nun {
+    position: absolute;
+    z-index: -1;
+    right: 12rem;
+}
+/**********
+ CONTENTS
+**********/
+header nav #drag-table {
+    position: fixed;
+    z-index: 9;
+    text-align: center;
+    top: 2.5vw;
+    left: 72vw;
+    list-style: none;
+    font-family: 'Inter-Light';
+    border: 0.01rem solid #000;
+    border-radius: 1rem 0;
+    padding: 0.5rem 0.8rem;
+    cursor: move;
+}   
+
+header nav #drag-table .drag-object {
+    z-index: 10;
+    cursor: move;
+}
+
+header nav #drag-table .drag-object .table-contents .index-start {
+    text-transform: uppercase;
+    font-family: 'Inter-Medium';
+}
+
+header nav #drag-table .drag-object .table-contents .sections {
+    cursor: move;
+}
+/***********
+    GAY
+***********/
+.fuckyou {
+    margin: 6rem;
+}
+
+.container h1 {
+    font-family: 'GT-Sectra-Display-Regular-Italic';
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    line-height: 1em;
+    text-align: center;
+    margin: -0.5rem;
+}
+
+.container .tittle-img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .garcia {
+    margin: 0 0.2rem 0 0.2rem;
+}
+
+.container .garcia .garcia-size {
+    width: 6rem;
+}
+
+.container .tittle-img .garcia .circle01 {
+    height: 4rem;
+    width: 25rem;
+    border: 0.01rem solid #000;
+    border-radius: 50%;
+    position: absolute;
+    margin: -7.5rem -16rem;
+    z-index: -1;
+}
+.container .tittle-img .garcia .x-glyph {
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 1;
+    margin: -2.1rem -4.1rem;
+    color: #fff;
+}
+
+.container .x-glyph2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+/***********
+    INTRO
+***********/
+.container .p-index .p-editorial {
+    font-family: 'Inter-Medium';
+    font-size: 1rem;
+    line-height: 1.13em;
+    text-indent: 7em;
+}
+
+.container .p-index .p-editorial .p1{
+    margin: 0.3rem 0;
+}
+
+.container .star {
+    margin: 20rem 4rem;
+    position: absolute;
+}
+
+.container p {
+    font-family: 'Pilowlava';
+    -webkit-text-stroke: 0.05rem #000;
+    color:  rgb(255, 238, 255);
+    font-size: 9rem;
+    line-height: 1em;
+    text-align: center;
+}
+
+.container .tits {
+    font-family: 'Inter-Black';
+    font-size: 0.7rem;
+}
+.container .matrixou {
+    margin: 5rem 0 1rem 0;
+   width: 100%;
+}
+
+.container .letmatrixou {
+    font-family: 'Inter-Italic';
+    font-size: 0.7rem;
+    border: 0.01rem solid #000;
+    width: fit-content;
+    border-radius: 1rem;
+    padding: 0 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .p-index .p-editorial2 {
+    font-family: 'Inter-Medium';
+    padding: 0 12rem;
+    font-size: 1rem;
+    line-height: 1.13em;
+    text-indent: 7em;
+}
+
+.container .p-index .p-editorial2 .p1, .p2 {
+    margin: 0.3rem 0;
+}
+
+.container .p-index .entry01-img {
+    margin: 1.5rem 5rem;
+}
+
+.container .p-index .h1-tittle {
+    text-align: left;
+    position: absolute;
+    margin: 7rem 11.5rem;
+}
+/***********
+    VELHA
+***********/
+.container .vielle {
+    text-align: center;
+}
+
+.container .vielle .banner-size {
+    width: 4.5rem;
+}
+
+.container .vielle .entry-tittle h2 {
+    font-family: 'Inter-ExtraBlack';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: -1.2rem;
+}
+
+.container .vielle .entry-tittle .entry-date {
+    margin: 0.5rem;
+}
+
+/***********
+ EXTRA NOTES
+***********/
+.extranotes-img {
+    position: absolute;
+}
+
+.entry02-img {
+   position: absolute;
+   z-index: -2;
+   margin: -4rem 15rem;
+}
+
+.spider {
+    position: absolute;
+    margin: -10rem 30rem;
+}
+
+.h1-tittle2 {
+    top: 20rem;
+}
+
+.pil {
+    font-family: 'Pilowlava';
+    -webkit-text-stroke: 0.05rem #000;
+    color:  rgb(255, 238, 255);
+    font-size: 9rem;
+    line-height: 0.5em;
+    text-align: center;
+}
+
+.img-margin {
+    margin: 0 -1.5rem;
+}
+
+.alien {
+    position: absolute;
+    margin: 12rem 5rem;
+}
+
+.p-editorial3 {
+    font-family: 'Inter-Medium';
+    font-size: 1rem;
+    line-height: 1.13em;
+}
+
+/***********
+   FOOTER
+***********/
+.extra {
+    font-family: 'Inter-Medium';
+    font-size: 0.38rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.6rem;
+}
+
+/*------------------*
+    media queries  
+*------------------*/
+@media screen and (max-width: 1025px) {
+    :root {
+        font-size: 1.5vw; 
+    }
+}
+
+@media screen and (max-width: 769px) {
+    :root{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    :root{
+        font-size: 4vw;
+    }
+}
