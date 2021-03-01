@@ -162,9 +162,8 @@ h2 {
     border: 0.065rem solid #000;
     border-radius: 5em 5em 5em 5em;
     background-color: #fff;
-    padding: 0.4rem 0.4rem;
-    height: 0.9rem;
-    line-height: 0.09em;
+    padding: 0.4rem 0.5rem;
+    line-height: 1em;
     display: inline-block;
     font-family: 'Inter-Medium';
     text-align: center;
@@ -215,7 +214,7 @@ header nav #drag-table {
     top: 2.5vw;
     left: 72vw;
     list-style: none;
-    font-family: 'Inter-Light';
+    font-family: 'Inter-Medium';
     border: 0.01rem solid #000;
     border-radius: 1rem 0;
     padding: 0.5rem 0.8rem;
@@ -268,7 +267,7 @@ header nav #drag-table .drag-object .table-contents .sections {
 .container .tittle-img .garcia .circle01 {
     height: 4rem;
     width: 25rem;
-    border: 0.01rem solid #000;
+    border: 0.1rem solid #000;
     border-radius: 50%;
     position: absolute;
     margin: -7.5rem -16rem;
@@ -305,11 +304,12 @@ header nav #drag-table .drag-object .table-contents .sections {
 .container .star {
     margin: 20rem 4rem;
     position: absolute;
+    width: 10rem
 }
 
 .container p {
     font-family: 'Pilowlava';
-    -webkit-text-stroke: 0.05rem #000;
+    -webkit-text-stroke: 0.1rem #000;
     color:  rgb(255, 238, 255);
     font-size: 9rem;
     line-height: 1em;
@@ -326,9 +326,9 @@ header nav #drag-table .drag-object .table-contents .sections {
 }
 
 .container .letmatrixou {
-    font-family: 'Inter-Italic';
+    font-family: 'Inter-MediumItalic';
     font-size: 0.7rem;
-    border: 0.01rem solid #000;
+    border: 0.1rem solid #000;
     width: fit-content;
     border-radius: 1rem;
     padding: 0 0.5rem;
@@ -350,6 +350,10 @@ header nav #drag-table .drag-object .table-contents .sections {
 
 .container .p-index .entry01-img {
     margin: 1.5rem 5rem;
+}
+
+.container .p-index .spice {
+    width: 6rem;
 }
 
 .container .p-index .h1-tittle {
@@ -444,6 +448,12 @@ header nav #drag-table .drag-object .table-contents .sections {
     :root {
         font-size: 1.5vw; 
     }
+
+    .container .star {
+        margin: 20rem 4rem;
+        position: absolute;
+        width: 9rem;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -455,5 +465,46 @@ header nav #drag-table .drag-object .table-contents .sections {
 @media screen and (max-width: 577px) {
     :root{
         font-size: 4vw;
+    }
+
+    .fuckyou {
+        margin: 6rem 1rem;
+    }
+    
+    .container .tittle-img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container .garcia {
+        margin: 0 0.2rem 0 0.2rem;
+    }
+    
+    .container .garcia .garcia-size {
+        width: 6rem;
+    }
+    
+    .container .tittle-img .garcia .circle01 {
+        height: 4rem;
+        width: 21rem;
+        border: 0.1rem solid #000;
+        border-radius: 50%;
+        position: absolute;
+        margin: -7.5rem -14rem;
+        z-index: -1;
+    }
+    .container .tittle-img .garcia .x-glyph {
+        font-size: 1.5rem;
+        position: absolute;
+        z-index: 1;
+        margin: -2.1rem -4.1rem;
+        color: #fff;
+    }
+    
+    .container .x-glyph2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1.5rem;
     }
 }
